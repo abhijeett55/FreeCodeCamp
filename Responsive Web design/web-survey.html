@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web-Survey Form</title>
+<style>
+.btn{ 
+    text-align: center;
+}
+.lang-rad{
+    display: block;
+    text-align: center;
+    padding: 1%;
+}
+p ,h1 {
+    text-align: center;
+
+}
+#survey-form {
+    text-align: center;
+}
+.check {
+    text-align: center;
+}
+body {
+    background-color: aliceblue;
+    text-overflow: ellipsis;
+
+}
+</style>
+</head>
+<body>
+<h1 id="title">FreeCodeCamp Survey Form</h1>
+<p id="description">Fill up the Details</p>
+<form id="survey-form">
+<label id="name-label" for="name-label" >Name<input id="name" type="text" placeholder="Enter a Name" required> </label>
+
+<label id="email-label" for="email-label" >Email<input id="email" type="email" placeholder="Enter your E-mail"  required></label>
+
+<label id="number-label" for="number-label" >Number<input id="number" min="0" max="999" type="number" placeholder="Enter Your Number" ></label>
+</form>
+<br>
+<div>
+<form id="survey-form">
+<label id="courses"><strong>Enter the Courses You wanna Apply : </strong></label>
+<select id="dropdown">
+  <option value="web">Web-Devlopment</option>
+  <option value="java">FullStack</option>
+  <option value="app">Android Development</option>
+  <option value="dsa">Data Structure & Algorithm</option>
+</select>
+</div>
+<br>
+<div class="lang-rad">
+<label id="language"><input type="radio" name="radio-group" value="Javascipt"/>Javascipt</label>
+<label id="language"><input type="radio" name="radio-group" value="Java"/>Java</label>
+<label id="language"><input type="radio" name="radio-group" value="c++"/>C++</label>
+<label id="language"><input type="radio" name="radio-group" value="ruby"/>Ruby</label>
+<label id="language"><input type="radio" name="radio-group" value="go"/>GO</label>
+<label id="language"><input type="radio" name="radio-group" value="rust"/>Rust</label>
+<label id="language"><input type="radio" name="radio-group" value="c"/>C</label>
+<label id="language"><input type="radio" name="radio-group" value="python"/>Python</label>
+</div>
+<br>
+
+<div class="check">
+    <label id="time"><input type="checkbox" value="first" required>4 Hours</label>
+    <label id="time"><input type="checkbox" value="second" required>20 Hours</label>
+    <label id="time"><input type="checkbox" value="third" required>40 Hours</label>
+    <label id="time"><input type="checkbox" value="fourth" required>80 Hours</label>
+    <label id="time"><input type="checkbox" value="Fifth" required>200 Hours</label>
+    
+</div>
+<br>
+    <div class="btn">
+        <label><textarea ></textarea></label>
+    </div>
+    <div class="btn">
+        <button id="submit" type="submit">Submit</button>
+    </div>
+    
+
+
+</form>
+</body>
+</html>

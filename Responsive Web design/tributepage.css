@@ -1,0 +1,19 @@
+#image{
+    max-width: 100%;
+    display: block;
+  }
+  #title , p , h2 {
+    text-align: center;
+  }
+  body {
+    background-color: rgba(255, 99, 71, 0.1)
+  }
+  image {
+    display: block;
+    align-items: center;
+    max-width: 100% ;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    overflow-clip-margin: content-box;
+    margin: 0 0 0 0 ;
+  }
